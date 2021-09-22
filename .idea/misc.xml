@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_admin.xml" value="0.1" />
+        <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_admin_home.xml" value="0.1" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_delivary.xml" value="0.1" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_delivary_admin.xml" value="0.22" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_home1.xml" value="0.12" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_payment.xml" value="0.12" />
         <entry key="..\:/Users/Gihan Kavishka/AndroidStudioProjects/Gasfinal/app/src/main/res/layout/activity_success.xml" value="0.1" />
       </map>

@@ -23,7 +23,7 @@ public class AdminHomeActivity extends AppCompatActivity {
 
         buy= findViewById(R.id.btnBuy);
         view = findViewById(R.id.btnView);
-        admin = findViewById(R.id.admin);
+        admin = findViewById(R.id.btnProfile);
         DB = new DBHelperBuddhishan(this);
 
 

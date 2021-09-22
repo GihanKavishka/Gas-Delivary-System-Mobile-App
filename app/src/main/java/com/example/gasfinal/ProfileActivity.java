@@ -85,12 +85,12 @@ public class ProfileActivity extends AppCompatActivity {
                 }
                 StringBuffer buffer = new StringBuffer();
                 while(res.moveToNext()){
-                    buffer.append("ID :"+res.getString(0)+"\n");
-                    buffer.append("Name :"+res.getString(1)+"\n");
-                    buffer.append("Address :"+res.getString(2)+"\n");
-                    buffer.append("Phone :"+res.getString(3)+"\n");
-                    buffer.append("Email :"+res.getString(4)+"\n");
-                    buffer.append("Product_id :"+res.getString(5)+"\n\n");
+
+                    buffer.append("Name :"+res.getString(0)+"\n");
+                    buffer.append("Address :"+res.getString(1)+"\n");
+                    buffer.append("Phone :"+res.getString(2)+"\n");
+                    buffer.append("Email :"+res.getString(3)+"\n\n");
+
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(ProfileActivity.this);
                 builder.setCancelable(true);

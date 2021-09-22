@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gasfinal">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".PaymentAdminActivity"
             android:exported="true" />
         <activity

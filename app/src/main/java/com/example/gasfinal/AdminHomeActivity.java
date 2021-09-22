@@ -10,21 +10,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity {
+public class AdminHomeActivity extends AppCompatActivity {
 
 
-    Button  view,buy,admin,profile;
+    Button  view,buy,admin;
     DBHelperBuddhishan DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_admin_home);
 
         buy= findViewById(R.id.btnBuy);
         view = findViewById(R.id.btnView);
         admin = findViewById(R.id.admin);
-        profile = findViewById(R.id.btnProfile);
         DB = new DBHelperBuddhishan(this);
 
 
@@ -35,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Cursor res = DB.getproductdata();
                 if(res.getCount()==0){
-                    Toast.makeText(HomeActivity.this, "No Entry Exists", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminHomeActivity.this, "No Entry Exists", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 StringBuffer buffer = new StringBuffer();
@@ -46,13 +45,13 @@ public class HomeActivity extends AppCompatActivity {
                     buffer.append("price :"+res.getString(3)+"\n\n");
                 }
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(AdminHomeActivity.this);
                 builder.setCancelable(true);
                 builder.setTitle("Product Details");
                 builder.setMessage(buffer.toString());
                 builder.show();
             }
-             });
+        });
 
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,17 +63,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        profile.setOnClickListener(new View.OnClickListener() {
+
+        admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AdminActivity.class);
                 startActivity(intent);
 
 
             }
         });
-
-
 
     }
 }

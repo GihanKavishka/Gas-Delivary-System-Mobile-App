@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class HomeActivity extends AppCompatActivity {
 
 
-    Button  view,buy,admin,profile;
+    Button  view,buy,admin;
     DBHelperBuddhishan DB;
 
     @Override
@@ -24,7 +24,6 @@ public class HomeActivity extends AppCompatActivity {
         buy= findViewById(R.id.btnBuy);
         view = findViewById(R.id.btnView);
         admin = findViewById(R.id.admin);
-        profile = findViewById(R.id.btnProfile);
         DB = new DBHelperBuddhishan(this);
 
 
@@ -64,17 +63,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        profile.setOnClickListener(new View.OnClickListener() {
+
+        admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AdminActivity.class);
                 startActivity(intent);
 
 
             }
         });
-
-
 
     }
 }

@@ -41,13 +41,20 @@ public class ProfileActivity extends AppCompatActivity {
                 String phoneTXT = phone.getText().toString();
                 String emailTXT = email.getText().toString();
 
+                if (nameTXT.equals("") || addressTXT.equals("") || phoneTXT.equals("") || emailTXT.equals("")) {
+                    Toast.makeText(ProfileActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
 
-                Boolean checkinsertdata = DB.insertProfileData(nameTXT,addressTXT ,phoneTXT,emailTXT);
-                if(checkinsertdata==true)
-                    Toast.makeText(ProfileActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(ProfileActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-            }        });
+                } else {
+                    Boolean checkinsertdata = DB.insertProfileData(nameTXT, addressTXT, phoneTXT, emailTXT);
+                    if (checkinsertdata == true)
+                        Toast.makeText(ProfileActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(ProfileActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
+
+
+                }
+            }
+            });
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

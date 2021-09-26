@@ -18,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.925" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="307dp"
@@ -26,10 +27,7 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<<<< Temporary merge branch 1
-        app:layout_constraintHorizontal_bias="0.846"
-=========
->>>>>>>>> Temporary merge branch 2
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
@@ -46,25 +44,18 @@
         app:layout_constraintVertical_bias="0.27"
         app:srcCompat="@drawable/download" />
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="148dp"
         android:layout_height="46dp"
+        android:layout_marginBottom="376dp"
         android:text="Products"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<<<< Temporary merge branch 1
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-=========
-        app:layout_constraintHorizontal_bias="0.566"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
->>>>>>>>> Temporary merge branch 2
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -82,20 +73,13 @@
         android:id="@+id/btnView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="212dp"
         android:text="View Products"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-<<<<<<<<< Temporary merge branch 1
-        app:layout_constraintHorizontal_bias="0.22"
-=========
-        app:layout_constraintHorizontal_bias="0.129"
->>>>>>>>> Temporary merge branch 2
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.925" />
 
-<<<<<<<<< Temporary merge branch 1
-=========
     <Button
         android:id="@+id/btnProfile"
         android:layout_width="wrap_content"
@@ -107,6 +91,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
->>>>>>>>> Temporary merge branch 2
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

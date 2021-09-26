@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class HomeActivity extends AppCompatActivity {
 
 
-    Button  view,buy,admin,profile;
+    Button  view,buy,profile;
     DBHelperBuddhishan DB;
 
     @Override
@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
         buy= findViewById(R.id.btnBuy);
         view = findViewById(R.id.btnView);
-        admin = findViewById(R.id.admin);
+
         profile = findViewById(R.id.btnProfile);
         DB = new DBHelperBuddhishan(this);
 
@@ -64,9 +64,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-<<<<<<<<< Temporary merge branch 1
 
-=========
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
->>>>>>>>> Temporary merge branch 2
+
 
 
 

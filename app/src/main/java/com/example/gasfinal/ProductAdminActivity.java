@@ -41,13 +41,19 @@ public class ProductAdminActivity extends AppCompatActivity {
                 String weightTXT = weight.getText().toString();
                 String priceTXT = price.getText().toString();
 
+                if (idTXT.equals("") || nameTXT.equals("") || weightTXT.equals("") || priceTXT.equals("")) {
+                    Toast.makeText(ProductAdminActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    Boolean checkinsertdata = DB.insertproductdata(idTXT, nameTXT, weightTXT, priceTXT);
+                    if (checkinsertdata == true)
+                        Toast.makeText(ProductAdminActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
+                    else
+                        Toast.makeText(ProductAdminActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
 
-                Boolean checkinsertdata = DB.insertproductdata(idTXT,nameTXT,weightTXT ,priceTXT);
-                if(checkinsertdata==true)
-                    Toast.makeText(ProductAdminActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
-                else
-                    Toast.makeText(ProductAdminActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-            }        });
+                }
+            }
+
+            });
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

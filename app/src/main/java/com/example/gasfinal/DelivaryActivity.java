@@ -44,13 +44,17 @@ public class DelivaryActivity extends AppCompatActivity {
                     String phoneTXT = phone.getText().toString();
                     String emailTXT = email.getText().toString();
                     String product_idTXT = product_id.getText().toString();
-
-                    Boolean checkinsertdata = DB.insertDelivaryData(idTXT,nameTXT,addressTXT ,phoneTXT,emailTXT,product_idTXT);
-                    if(checkinsertdata==true)
-                        Toast.makeText(DelivaryActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
-                    else
-                        Toast.makeText(DelivaryActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-                }        });
+                    if (idTXT.equals("") || nameTXT.equals("") || addressTXT.equals("") || phoneTXT.equals("") || emailTXT.equals("") || product_idTXT.equals("")) {
+                        Toast.makeText(DelivaryActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Boolean checkinsertdata = DB.insertDelivaryData(idTXT, nameTXT, addressTXT, phoneTXT, emailTXT, product_idTXT);
+                        if (checkinsertdata == true)
+                            Toast.makeText(DelivaryActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(DelivaryActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                });
 
         makePay.setOnClickListener(new View.OnClickListener() {
             @Override
